@@ -59,11 +59,6 @@ app.post ('/createUser',(req,res)=>{
     .then(user => res.json(user))
     .catch(err => res.json(err))
 })
- 
-
-
-
-
-app.listen(port , ()=>{
+ app.listen(port , ()=>{
     console.log(`server is listening at https://localhost:${port}`)
 })
